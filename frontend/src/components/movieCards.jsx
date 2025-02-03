@@ -1,7 +1,7 @@
 import React from "react";
 import "./movieCards.css";
 
-function MovieCard({title, postUrl }){
+function MovieCard({title, postUrl, Desc }){
     return (
         <div className = "movie-card">
             <img
@@ -10,7 +10,7 @@ function MovieCard({title, postUrl }){
                 className="PosterImage"
             />
             <div className="Title">{title}</div>
-            <button>My Button</button>
+            <div className="Desc">{Desc}</div>
         </div>
     );
 }
